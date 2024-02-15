@@ -9,11 +9,37 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+// Style du bouton
+.lebouton {
+  display: flex;
+  align-self: center;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  padding: 1.5%;
+  font-size: larger;
+}
+
+// Block code
+.codeblock {
+  border: 2px solid black;
+  border-radius: 20px;
+
+  background-color: var(--transparence-h);
+  color: rgba(white, var(--transparence-h1-valeur));
+
+  padding: 2%;
+}
+
+.codeblock:hover {
+  background-color: rgba(black, var(--transparence-h1-valeur));
+}
+
 .global {
   // min-height: 100vh;
   display: flex;
   justify-content: center;
-  min-height: 69vh;
+  min-height: 59.5vh;
 }
 
 .global > section,
@@ -34,6 +60,7 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--transparence-h);
   position: relative;
+  z-index: -2;
   // background-image: url(https://img.freepik.com/photos-gratuite/belles-fleurs-gouttes-eau_23-2150705688.jpg);
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -62,3 +89,9 @@ body {
   color: var(--transparence-h);
   // z-index: -2;
 }
+
+// #footer::after {
+//   position: absolute;
+//   content: "";
+//   inset: -100px;
+// }

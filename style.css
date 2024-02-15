@@ -12,11 +12,11 @@ Text Domain: theme-gabrielle
 
 */
 :root {
-  --transparence-h: rgba(255, 255, 255, 0.523);
+  --transparence-h: rgba(0, 0, 0, 0.523);
   --transparence-h1-valeur: 0.7;
   --transparence-section: 0.3;
   --valeur-largeur-galerie: 70vw;
-  --u1: 180;
+  --u1: 280;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
@@ -24,8 +24,8 @@ Text Domain: theme-gabrielle
   --s-arriere: 100%;
   --s-avant: 50%;
   /* La luminosité */
-  --l-arriere: 30%;
-  ---avant: 20%;
+  --l-arriere: 60%;
+  ---avant: 30%;
   /* Couleur d'arrière plan */
   /* Couleur d'avant plan - background-color */
   --couleur-entete: hsl(var(--u1), var(--s-avant), var(--avant));
@@ -35,11 +35,11 @@ Text Domain: theme-gabrielle
   --couleur-footer: hsl(var(--u1), var(--s-avant), var(--avant));
   /* Couleur monochrome */
   /* Couleur d'arrière plan */
-  --couleur-arriere-entete: hsl(var(--u1), 100%, 30%);
-  --couleur-arriere-accueil: hsl(var(--u1), 100%, 25%);
-  --couleur-arriere-evenement: hsl(var(--u1), 100%, 20%);
-  --couleur-arriere-galerie: hsl(var(--u1), 100%, 25%);
-  --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
+  --couleur-arriere-entete: hsl(var(--u1), 70%, 80%);
+  --couleur-arriere-accueil: hsl(var(--u1), 70%, 75%);
+  --couleur-arriere-evenement: hsl(var(--u1), 70%, 70%);
+  --couleur-arriere-galerie: hsl(var(--u1), 70%, 75%);
+  --couleur-arriere-footer: hsl(var(--u1), 70%, 80%);
   --couleur-arriere-pour-vague: hsl(var(--u1), 100%, 25%, 20%);
   /* Couleur d'avant plan - background-color */
   --couleur-entete: hsl(var(--u1), 100%, 30%);
@@ -47,6 +47,7 @@ Text Domain: theme-gabrielle
   --couleur-footer: hsl(var(--u1), 100%, 30%);
   --couleur-evenement: var(--couleur-arriere-accueil);
   --couleur-galerie: var(--couleur-arriere-accueil);
+  --couleur-texte-h3: hsl(var(--u3), var(--s-avant), var(--avant));
 }
 
 * {
@@ -60,10 +61,30 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+.lebouton {
+  display: flex;
+  align-self: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1.5%;
+  font-size: larger;
+}
+
+.codeblock {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: var(--transparence-h);
+  color: rgba(255, 255, 255, var(--transparence-h1-valeur));
+  padding: 2%;
+}
+
+.codeblock:hover {
+  background-color: rgba(0, 0, 0, var(--transparence-h1-valeur));
+}
+
 .global {
   display: flex;
   justify-content: center;
-  min-height: 69vh;
+  min-height: 59.5vh;
 }
 
 .global > section,
@@ -82,6 +103,7 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--transparence-h);
   position: relative;
+  z-index: -2;
 }
 
 #accueil {
@@ -109,6 +131,7 @@ h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
   font-style: normal;
+  text-shadow: 4px 4px 4px #826a4c;
   letter-spacing: 0px;
 }
 
@@ -116,22 +139,27 @@ h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
+  line-height: 1.5;
 }
 
 h3 {
   color: var(--transparence-h);
+  line-height: 1.5;
 }
 
 h4 {
   color: var(--transparence-h);
+  line-height: 1.5;
 }
 
 h5 {
   color: var(--transparence-h);
+  line-height: 1.5;
 }
 
 h6 {
   color: var(--transparence-h);
+  line-height: 1.5;
 }
 
 .vague {
@@ -142,6 +170,7 @@ h6 {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  z-index: 2;
 }
 
 .vague svg {
@@ -168,9 +197,8 @@ h6 {
 .vague2 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.5px);
-  height: 156px;
-  transform: rotateY(180deg);
+  width: calc(160% + 1.3px);
+  height: 150px;
 }
 
 .vague2 .shape-fill {
@@ -187,6 +215,7 @@ h6 {
   content: "";
   inset: 0;
   background-color: var(--couleur-arriere-galerie);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   transform: skewY(-5deg);
   z-index: -1;
 }/*# sourceMappingURL=style.css.map */

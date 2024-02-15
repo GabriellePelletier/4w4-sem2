@@ -7,6 +7,7 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  z-index: 2;
 }
 
 .vague svg {
@@ -35,9 +36,8 @@
 .vague2 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.5px);
-  height: 156px;
-  transform: rotateY(180deg);
+  width: calc(160% + 1.3px);
+  height: 150px;
 }
 
 .vague2 .shape-fill {
