@@ -8,7 +8,7 @@
   --valeur-largeur-galerie: 70vw;
 
   // Calcul des teintes
-  --u1: 70; // Couleur initiale
+  --u1: 180; // Couleur initiale
   --u2: calc(var(--u1) + 180); // Couleur complémentaire
   --u3: calc(var(--u2) - 30); // Couleur analogue gauche
   --u4: calc(var(--u2) + 30); // Couleur analogue droite
@@ -22,15 +22,15 @@
   ---avant: 20%;
 
   /* Couleur d'arrière plan */
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-evenement: hsl(
-    var(--u3),
-    var(--s-arriere),
-    var(--l-arriere)
-  );
-  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  // --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  // --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  // --couleur-arriere-evenement: hsl(
+  //   var(--u3),
+  //   var(--s-arriere),
+  //   var(--l-arriere)
+  // );
+  // --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  // --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
 
   /* Couleur d'avant plan - background-color */
   --couleur-entete: hsl(var(--u1), var(--s-avant), var(--avant));
@@ -38,4 +38,26 @@
   --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--avant));
   --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--avant));
   --couleur-footer: hsl(var(--u1), var(--s-avant), var(--avant));
+
+  /* Couleur monochrome */
+
+  /* Couleur d'arrière plan */
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-arriere-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-arriere-galerie: hsl(var(--u1), 100%, 25%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
+
+  --couleur-arriere-pour-vague: hsl(var(--u1), 100%, 25%, 20%);
+
+  /* Couleur d'avant plan - background-color */
+  --couleur-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-accueil: hsl(var(--u1), 100%, 25%);
+  // --couleur-evenement: hsl(var(--u1), 100%, 20%);
+  // --couleur-galerie: hsl(var(--u1), 100%, 25%);
+  --couleur-footer: hsl(var(--u1), 100%, 30%);
+
+  // Pour que la diagonale soit entièrement visible
+  --couleur-evenement: var(--couleur-arriere-accueil);
+  --couleur-galerie: var(--couleur-arriere-accueil);
 }

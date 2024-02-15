@@ -11,23 +11,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-gabrielle
 
 */
-:root :root {
-  /*
-  // Couleur d'arrière plan
-  --couleur-arriere-entete: #7078be83;
-  --couleur-arriere-accueil: #5781ae85;
-  --couleur-arriere-evenement: #63b1bb82;
-  --couleur-arriere-galerie: #646dba7d;
-  --couleur-arriere-footer: #0d090da4;
-
-  // Couleur de transparence des titres
-  --transparence-h: rgba(17, 22, 43, 0.631);
+:root {
+  --transparence-h: rgba(255, 255, 255, 0.523);
   --transparence-h1-valeur: 0.7;
   --transparence-section: 0.3;
-
-  // Zone de la Galerie est plus grande que les autres
-  --valeur-largeur-galerie: 70vw;*/
-  --u1: 30;
+  --valeur-largeur-galerie: 70vw;
+  --u1: 180;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
@@ -38,37 +27,26 @@ Text Domain: theme-gabrielle
   --l-arriere: 30%;
   ---avant: 20%;
   /* Couleur d'arrière plan */
-  --couleur-arriere-entete: hsl(
-    var(--u1),
-    var(--s-arriere),
-    var(--l-arriere)
-  );
-  --couleur-arriere-accueil: hsl(
-    var(--u2),
-    var(--s-arriere),
-    var(--l-arriere)
-  );
-  --couleur-arriere-evenement: hsl(
-    var(--u3),
-    var(--s-arriere),
-    var(--l-arriere)
-  );
-  --couleur-arriere-galerie: hsl(
-    var(--u4),
-    var(--s-arriere),
-    var(--l-arriere)
-  );
-  --couleur-arriere-footer: hsl(
-    var(--u1),
-    var(--s-arriere),
-    var(--l-arriere)
-  );
   /* Couleur d'avant plan - background-color */
   --couleur-entete: hsl(var(--u1), var(--s-avant), var(--avant));
   --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--avant));
   --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--avant));
   --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--avant));
   --couleur-footer: hsl(var(--u1), var(--s-avant), var(--avant));
+  /* Couleur monochrome */
+  /* Couleur d'arrière plan */
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-arriere-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-arriere-evenement: hsl(var(--u1), 100%, 20%);
+  --couleur-arriere-galerie: hsl(var(--u1), 100%, 25%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 30%);
+  --couleur-arriere-pour-vague: hsl(var(--u1), 100%, 25%, 20%);
+  /* Couleur d'avant plan - background-color */
+  --couleur-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-accueil: hsl(var(--u1), 100%, 25%);
+  --couleur-footer: hsl(var(--u1), 100%, 30%);
+  --couleur-evenement: var(--couleur-arriere-accueil);
+  --couleur-galerie: var(--couleur-arriere-accueil);
 }
 
 * {
@@ -79,46 +57,59 @@ Text Domain: theme-gabrielle
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Prompt", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
+  min-height: 69vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
   flex: 0 1 900px;
-  border: 1px solid #aaa;
+  padding: 3rem 1rem;
+}
+
+#entete,
+#footer {
+  min-height: 20vh;
 }
 
 #entete {
-  background-color: var(--couleur-arriere-accueil);
+  background-color: var(--couleur-arriere-entete);
+  color: var(--transparence-h);
+  position: relative;
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--transparence-h);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--transparence-h);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  height: var(--valeur-largeur-galerie);
+  color: var(--transparence-h);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--transparence-h);
 }
 
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
   font-style: normal;
+  letter-spacing: 0px;
 }
 
 h2 {
@@ -141,4 +132,61 @@ h5 {
 
 h6 {
   color: var(--transparence-h);
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 150px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.vague2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.5px);
+  height: 156px;
+  transform: rotateY(180deg);
+}
+
+.vague2 .shape-fill {
+  fill: var(--couleur-arriere-evenement);
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: var(--couleur-arriere-galerie);
+  transform: skewY(-5deg);
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

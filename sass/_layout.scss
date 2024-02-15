@@ -6,14 +6,14 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Prompt", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .global {
   // min-height: 100vh;
   display: flex;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 69vh;
 }
 
 .global > section,
@@ -22,7 +22,7 @@ body {
   flex: 0 1 900px;
   // border: 1px solid grey;
   padding: 3rem 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  // background-color: rgba(255, 255, 255, 0.2);
 }
 
 #entete,
@@ -48,6 +48,7 @@ body {
 #evenement {
   background-color: var(--couleur-arriere-evenement);
   color: var(--transparence-h);
+  // z-index: -1;
 }
 
 #galerie {
@@ -59,4 +60,5 @@ body {
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--transparence-h);
+  // z-index: -2;
 }

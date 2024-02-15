@@ -12,32 +12,34 @@
 .vague svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  width: calc(130% + 1.3px);
   height: 150px;
 }
 
 .vague .shape-fill {
-  fill: var(--couleur-arriere-evenement);
+  // fill: linear-gradient(var(--couleur-arriere-accueil), rgba(255, 255, 255, 0));
+  fill: var(--couleur-arriere-accueil);
 }
 
 // Deuxième vague
 .vague2 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
 
 .vague2 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 216px;
+  width: calc(100% + 1.5px);
+  height: 156px;
   transform: rotateY(180deg);
 }
 
 .vague2 .shape-fill {
-  fill: var(--transparence-h);
+  fill: var(--couleur-arriere-evenement);
 }
