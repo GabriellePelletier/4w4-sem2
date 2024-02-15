@@ -1,7 +1,41 @@
 :root {
-    --couleur-arriere-entete : #618aad;
-    --couleur-arriere-accueil : #0f0;
-    --couleur-arriere-evenement : #045;
-    --couleur-arriere-galerie : rgb(223, 230, 42);
-    --couleur-arriere-footer : #630;
+  // Couleur de transparence des titres
+  --transparence-h: rgba(255, 255, 255, 0.523);
+  --transparence-h1-valeur: 0.7;
+  --transparence-section: 0.3;
+
+  // Zone de la Galerie est plus grande que les autres
+  --valeur-largeur-galerie: 70vw;
+
+  // Calcul des teintes
+  --u1: 70; // Couleur initiale
+  --u2: calc(var(--u1) + 180); // Couleur complémentaire
+  --u3: calc(var(--u2) - 30); // Couleur analogue gauche
+  --u4: calc(var(--u2) + 30); // Couleur analogue droite
+
+  /* La saturation */
+  --s-arriere: 100%;
+  --s-avant: 50%;
+
+  /* La luminosité */
+  --l-arriere: 30%;
+  ---avant: 20%;
+
+  /* Couleur d'arrière plan */
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(
+    var(--u3),
+    var(--s-arriere),
+    var(--l-arriere)
+  );
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+
+  /* Couleur d'avant plan - background-color */
+  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--avant));
+  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--avant));
+  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--avant));
+  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--avant));
+  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--avant));
 }

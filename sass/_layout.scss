@@ -1,39 +1,62 @@
 * {
-    margin : 0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-body{
- display : flex;
- flex-direction : column;
- font-family: "prompt", sans-serif;
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
-    display : flex;
-    justify-content: center;
-    min-height : 40vh;
+  // min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 60vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-    flex : 0 1 900px;
-    border : 1px solid #aaa;
+  flex: 0 1 900px;
+  // border: 1px solid grey;
+  padding: 3rem 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-#entete{
-    background-color: var(--couleur-arriere-entete);
+#entete,
+#footer {
+  min-height: 20vh;
 }
-#accueil{
-    background-color: var(--couleur-arriere-accueil);
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+  color: var(--transparence-h);
+  position: relative;
+  // background-image: url(https://img.freepik.com/photos-gratuite/belles-fleurs-gouttes-eau_23-2150705688.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // filter: opacity(80%);
 }
-#evenement{
-    background-color: var(--couleur-arriere-evenement);
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+  color: var(--transparence-h);
 }
-#galerie{
-    background-color: var(--couleur-arriere-galerie);
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+  color: var(--transparence-h);
 }
-#footer{
-    background-color: var(--couleur-arriere-footer);
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+  height: var(--valeur-largeur-galerie);
+  color: var(--transparence-h);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+  color: var(--transparence-h);
 }

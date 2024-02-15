@@ -1,23 +1,74 @@
 @charset "UTF-8";
 /*
-Theme Name: Theme Eddy
-Author: Eddy Martin
-Author URI: https://referenced.ca/
+
+Theme Name: Theme Gabrielle
+Author: Gabrielle Pelletier
+Author URI: https://wordpress.org/
 Description: Thème de base développé dans le cours 4W4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: theme-eddy
+Text Domain: theme-gabrielle
+
 */
-/*
-https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
-*/
-:root {
-  --couleur-arriere-entete: #618aad;
-  --couleur-arriere-accueil: #0f0;
-  --couleur-arriere-evenement: #045;
-  --couleur-arriere-galerie: rgb(223, 230, 42);
-  --couleur-arriere-footer: #630;
+:root :root {
+  /*
+  // Couleur d'arrière plan
+  --couleur-arriere-entete: #7078be83;
+  --couleur-arriere-accueil: #5781ae85;
+  --couleur-arriere-evenement: #63b1bb82;
+  --couleur-arriere-galerie: #646dba7d;
+  --couleur-arriere-footer: #0d090da4;
+
+  // Couleur de transparence des titres
+  --transparence-h: rgba(17, 22, 43, 0.631);
+  --transparence-h1-valeur: 0.7;
+  --transparence-section: 0.3;
+
+  // Zone de la Galerie est plus grande que les autres
+  --valeur-largeur-galerie: 70vw;*/
+  --u1: 30;
+  --u2: calc(var(--u1) + 180);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u2) + 30);
+  /* La saturation */
+  --s-arriere: 100%;
+  --s-avant: 50%;
+  /* La luminosité */
+  --l-arriere: 30%;
+  ---avant: 20%;
+  /* Couleur d'arrière plan */
+  --couleur-arriere-entete: hsl(
+    var(--u1),
+    var(--s-arriere),
+    var(--l-arriere)
+  );
+  --couleur-arriere-accueil: hsl(
+    var(--u2),
+    var(--s-arriere),
+    var(--l-arriere)
+  );
+  --couleur-arriere-evenement: hsl(
+    var(--u3),
+    var(--s-arriere),
+    var(--l-arriere)
+  );
+  --couleur-arriere-galerie: hsl(
+    var(--u4),
+    var(--s-arriere),
+    var(--l-arriere)
+  );
+  --couleur-arriere-footer: hsl(
+    var(--u1),
+    var(--s-arriere),
+    var(--l-arriere)
+  );
+  /* Couleur d'avant plan - background-color */
+  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--avant));
+  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--avant));
+  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--avant));
+  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--avant));
+  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--avant));
 }
 
 * {
@@ -28,7 +79,7 @@ https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
 body {
   display: flex;
   flex-direction: column;
-  font-family: "prompt", sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
@@ -45,7 +96,7 @@ body {
 }
 
 #entete {
-  background-color: var(--couleur-arriere-entete);
+  background-color: var(--couleur-arriere-accueil);
 }
 
 #accueil {
@@ -64,9 +115,6 @@ body {
   background-color: var(--couleur-arriere-footer);
 }
 
-/*
-https://chrisburnell.com/clamp-calculator/
-*/
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
@@ -77,4 +125,20 @@ h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-weight: 500;
   font-style: normal;
+}
+
+h3 {
+  color: var(--transparence-h);
+}
+
+h4 {
+  color: var(--transparence-h);
+}
+
+h5 {
+  color: var(--transparence-h);
+}
+
+h6 {
+  color: var(--transparence-h);
 }/*# sourceMappingURL=style.css.map */
