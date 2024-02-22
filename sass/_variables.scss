@@ -8,7 +8,7 @@
   --valeur-largeur-galerie: 70vw;
 
   // Calcul des teintes
-  --u1: 190; // Couleur initiale
+  --u1: 15; // Couleur initiale
   --u2: calc(var(--u1) + 180); // Couleur complémentaire
   --u3: calc(var(--u2) - 30); // Couleur analogue gauche
   --u4: calc(var(--u2) + 30); // Couleur analogue droite
@@ -20,26 +20,6 @@
   /* La luminosité */
   --l-arriere: 60%;
   ---avant: 30%;
-
-  /* Couleur d'arrière plan */
-  // --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  // --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  // --couleur-arriere-evenement: hsl(
-  //   var(--u3),
-  //   var(--s-arriere),
-  //   var(--l-arriere)
-  // );
-  // --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  // --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-
-  /* Couleur d'avant plan - background-color */
-  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--avant));
-  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--avant));
-  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--avant));
-  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--avant));
-  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--avant));
-
-  /* Couleur monochrome */
 
   /* Couleur d'arrière plan */
   --couleur-arriere-entete: hsl(var(--u1), 70%, 90%);
@@ -62,5 +42,10 @@
   --couleur-galerie: var(--couleur-arriere-accueil);
 
   // Pour le texte
-  --couleur-texte-h2: hsl(var(--u2), 80%, 50%);
+  --couleur-texte-h2: hsl(var(--u2), 80%, 40%);
+  --couleur-texte-hov: hsl(var(--u2), 80%, 50%);
+  --bouton-couleur1: hsl(var(--u2), 80%, 50%);
+  --bouton-couleur2: hsl(var(--u2), 20%, 70%);
+  --bouton-couleur3: hsl(var(--u2), 10%, 50%);
+  --bouton-couleur4: hsl(var(--u2), 10%, 70%);
 }

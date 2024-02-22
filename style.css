@@ -16,7 +16,7 @@ Text Domain: theme-gabrielle
   --transparence-h1-valeur: 0.7;
   --transparence-section: 0.3;
   --valeur-largeur-galerie: 70vw;
-  --u1: 190;
+  --u1: 15;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
@@ -26,14 +26,6 @@ Text Domain: theme-gabrielle
   /* La luminosité */
   --l-arriere: 60%;
   ---avant: 30%;
-  /* Couleur d'arrière plan */
-  /* Couleur d'avant plan - background-color */
-  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--avant));
-  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--avant));
-  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--avant));
-  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--avant));
-  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--avant));
-  /* Couleur monochrome */
   /* Couleur d'arrière plan */
   --couleur-arriere-entete: hsl(var(--u1), 70%, 90%);
   --couleur-arriere-accueil: hsl(var(--u1), 70%, 85%);
@@ -47,7 +39,12 @@ Text Domain: theme-gabrielle
   --couleur-footer: hsl(var(--u1), 100%, 30%);
   --couleur-evenement: var(--couleur-arriere-accueil);
   --couleur-galerie: var(--couleur-arriere-accueil);
-  --couleur-texte-h2: hsl(var(--u2), 80%, 50%);
+  --couleur-texte-h2: hsl(var(--u2), 80%, 40%);
+  --couleur-texte-hov: hsl(var(--u2), 80%, 50%);
+  --bouton-couleur1: hsl(var(--u2), 80%, 50%);
+  --bouton-couleur2: hsl(var(--u2), 20%, 70%);
+  --bouton-couleur3: hsl(var(--u2), 10%, 50%);
+  --bouton-couleur4: hsl(var(--u2), 10%, 70%);
 }
 
 * {
@@ -59,14 +56,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
-}
-
-.lebouton {
-  display: flex;
-  align-self: center;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 1.5%;
-  font-size: larger;
 }
 
 .codeblock {
@@ -84,14 +73,19 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 59.5vh;
+  min-height: 40vh;
+}
+
+.global > header {
+  flex: 1;
+  min-height: auto;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
-  padding: 3rem 1rem;
+  flex: 0 1 1100px;
+  padding: 5rem 1rem;
 }
 
 #entete,
@@ -118,7 +112,6 @@ body {
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
-  height: var(--valeur-largeur-galerie);
   color: var(--transparence-h);
 }
 
@@ -129,16 +122,43 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(2, 24, 53);
 }
-
+a:hover {
+  text-decoration: underline;
+  color: rgb(5, 55, 119);
+}
 a:active {
   text-decoration: none;
-  color: black;
+  color: rgb(57, 70, 96);
+}
+a:visited {
+  text-decoration: none;
+  color: rgb(3, 32, 98);
+}
+a:focus {
+  text-decoration: none;
+  color: rgb(16, 89, 111);
 }
 
 b {
   color: var(--couleur-texte-h2);
+}
+
+b:hover {
+  color: var(--couleur-texte-hov);
+}
+
+img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+}
+
+img:hover {
+  filter: brightness(1.2);
+  border-radius: 50px;
 }
 
 h1 {
@@ -150,14 +170,14 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-size: clamp(1rem, 0.25rem + 2.4vw, 1.75rem);
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
 }
 
 h3 {
-  font-size: clamp(0.75rem, 0.625rem + 0.4vw, 0.875rem);
+  font-size: clamp(1rem, 0.5rem + 1.6vw, 1.5rem);
   color: var(--transparence-h);
   line-height: 1.5;
 }
@@ -210,13 +230,15 @@ h6 {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  z-index: 2;
 }
 
 .vague2 svg {
   position: relative;
   display: block;
-  width: calc(160% + 1.3px);
+  width: calc(182% + 1.3px);
   height: 150px;
+  transform: rotateY(180deg);
 }
 
 .vague2 .shape-fill {
@@ -236,4 +258,39 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   transform: skewY(-5deg);
   z-index: -1;
+}
+
+.entete__header {
+  background-image: url("../4w4-sem2/image/monument.jpeg");
+  background-size: cover;
+}
+
+.leblockspan {
+  display: block;
+}
+
+button {
+  font-size: clamp(0.938rem, 0.75rem + 0.6vw, 1.125rem);
+  padding: 1.5%;
+  background-image: linear-gradient(120deg, white, rgb(181, 197, 207));
+  transition: transform 0.2s;
+}
+
+button:hover {
+  background-image: linear-gradient(120deg, rgb(186, 186, 186), rgb(149, 175, 187));
+  transform: translateY(-10px);
+}
+
+button:active {
+  background-image: linear-gradient(120deg, rgb(200, 233, 228), rgb(76, 221, 231));
+}
+
+.lebouton {
+  display: flex;
+  align-self: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lebouton:hover {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

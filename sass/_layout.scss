@@ -9,17 +9,6 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-// Style du bouton
-.lebouton {
-  display: flex;
-  align-self: center;
-
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  padding: 1.5%;
-  font-size: larger;
-}
-
 // Block code
 .codeblock {
   border: 2px solid black;
@@ -39,15 +28,20 @@ body {
   // min-height: 100vh;
   display: flex;
   justify-content: center;
-  min-height: 59.5vh;
+  min-height: 40vh;
+}
+
+.global > header {
+  flex: 1;
+  min-height: auto;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1100px;
   // border: 1px solid grey;
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
   // background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -80,7 +74,6 @@ body {
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
-  height: var(--valeur-largeur-galerie);
   color: var(--transparence-h);
 }
 
@@ -93,20 +86,46 @@ body {
 // Sélecteurs précis
 a {
   text-decoration: none;
-  color: black;
-}
+  color: rgb(2, 24, 53);
 
-a:active {
-  text-decoration: none;
-  color: black;
+  &:hover {
+    text-decoration: underline;
+    color: rgb(5, 55, 119);
+  }
+
+  &:active {
+    text-decoration: none;
+    color: rgb(57, 70, 96);
+  }
+
+  &:visited {
+    text-decoration: none;
+    color: rgb(3, 32, 98);
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: rgb(16, 89, 111);
+  }
 }
 
 b {
   color: var(--couleur-texte-h2);
 }
 
-// #footer::after {
-//   position: absolute;
-//   content: "";
-//   inset: -100px;
-// }
+b:hover {
+  color: var(--couleur-texte-hov);
+}
+
+img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+
+  transition: 1s;
+}
+
+img:hover {
+  filter: brightness(1.2);
+  border-radius: 50px;
+}
