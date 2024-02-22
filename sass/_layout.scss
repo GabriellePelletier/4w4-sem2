@@ -90,6 +90,21 @@ body {
   // z-index: -2;
 }
 
+// Sélecteurs précis
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+b {
+  color: var(--couleur-texte-h2);
+}
+
 // #footer::after {
 //   position: absolute;
 //   content: "";

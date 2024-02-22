@@ -16,7 +16,7 @@ Text Domain: theme-gabrielle
   --transparence-h1-valeur: 0.7;
   --transparence-section: 0.3;
   --valeur-largeur-galerie: 70vw;
-  --u1: 280;
+  --u1: 190;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
@@ -35,11 +35,11 @@ Text Domain: theme-gabrielle
   --couleur-footer: hsl(var(--u1), var(--s-avant), var(--avant));
   /* Couleur monochrome */
   /* Couleur d'arrière plan */
-  --couleur-arriere-entete: hsl(var(--u1), 70%, 80%);
-  --couleur-arriere-accueil: hsl(var(--u1), 70%, 75%);
-  --couleur-arriere-evenement: hsl(var(--u1), 70%, 70%);
-  --couleur-arriere-galerie: hsl(var(--u1), 70%, 75%);
-  --couleur-arriere-footer: hsl(var(--u1), 70%, 80%);
+  --couleur-arriere-entete: hsl(var(--u1), 70%, 90%);
+  --couleur-arriere-accueil: hsl(var(--u1), 70%, 85%);
+  --couleur-arriere-evenement: hsl(var(--u1), 70%, 80%);
+  --couleur-arriere-galerie: hsl(var(--u1), 70%, 85%);
+  --couleur-arriere-footer: hsl(var(--u1), 70%, 90%);
   --couleur-arriere-pour-vague: hsl(var(--u1), 100%, 25%, 20%);
   /* Couleur d'avant plan - background-color */
   --couleur-entete: hsl(var(--u1), 100%, 30%);
@@ -47,7 +47,7 @@ Text Domain: theme-gabrielle
   --couleur-footer: hsl(var(--u1), 100%, 30%);
   --couleur-evenement: var(--couleur-arriere-accueil);
   --couleur-galerie: var(--couleur-arriere-accueil);
-  --couleur-texte-h3: hsl(var(--u3), var(--s-avant), var(--avant));
+  --couleur-texte-h2: hsl(var(--u2), 80%, 50%);
 }
 
 * {
@@ -127,6 +127,20 @@ body {
   color: var(--transparence-h);
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+b {
+  color: var(--couleur-texte-h2);
+}
+
 h1 {
   font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
   font-weight: 600;
@@ -143,21 +157,25 @@ h2 {
 }
 
 h3 {
+  font-size: clamp(0.75rem, 0.625rem + 0.4vw, 0.875rem);
   color: var(--transparence-h);
   line-height: 1.5;
 }
 
 h4 {
+  font-size: clamp(0.75rem, 0.625rem + 0.4vw, 0.875rem);
   color: var(--transparence-h);
   line-height: 1.5;
 }
 
 h5 {
+  font-size: clamp(0.813rem, 0.688rem + 0.4vw, 0.938rem);
   color: var(--transparence-h);
   line-height: 1.5;
 }
 
 h6 {
+  font-size: clamp(0.688rem, 0.625rem + 0.2vw, 0.75rem);
   color: var(--transparence-h);
   line-height: 1.5;
 }
