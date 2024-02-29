@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
     <!-- Link à d'autres pages -->
-    <link rel="stylesheet" href="../4w4-sem2/normalize.css" />
-    <link rel="stylesheet" href="../4w4-sem2/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/normalize.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
   </head>
   <body>
     <div id="entete" class="global">
@@ -43,8 +43,9 @@
     <div id="accueil" class="global">
       <section>
         <h2>Accueil <b>(h2)</b></h2>
-        <div class="cours">
-          <!-- <h3>
+          <div class="cours">
+
+        <!-- <h3>
           <img src="image/img_logo_random.jpeg" alt="logo" />
           Certainty listening no no behaviour existence assurance situation is.
           Because add why not esteems amiable him. Interested the unaffected mrs
@@ -54,91 +55,28 @@
           <b>death</b> he at share alone. Yet outward the him compass hearted
           are tedious. (h3)
         </h3> -->
-          <div class="carte">
-            <h3>582-6N3 Stage (285h)</h3>
-            <p>
-              Le stage en entreprise complète la formation de l’étudiant en lui
-              permettant d'intégrer et de mettre en application ses différents…
-            </p>
-          </div>
+        <?php
 
-          <div class="carte">
-            <h3>582-3M5 Imagerie 3D (75h)</h3>
-            <p>
-              Dans ce cours, l’étudiant est initié au monde de l’imagerie de
-              synthèse. Il est amené à maîtriser les outils et…
-            </p>
-          </div>
+          // if(have_posts()){
+          //   while(have_posts()){
+          //     the_post();
+          //     the_title('<h3>', '</h3>');
+          //     echo wp_trim_words(get_the_content(), 30);
+          //   }  
+          // }
 
-          <div class="carte">
-            <h3>582-2J2 Création de jeu 2D (60h)</h3>
-            <p>
-              Dans ce cours, l’étudiant approfondit la programmation graphique
-              et s’initie aux concepts de base d'un moteur de jeu. Le cours…
-            </p>
-          </div>
+          if(have_posts()):
+            while(have_posts()): the_post(); ?>
+            <div class="carte">
+              <h3><?php the_title(); ?></h3>
+              <p><?php echo wp_trim_words(get_the_content(), 20); ?></p>
+            </div>
 
-          <div class="carte">
-            <h3>582-2W2 Animation et interactivité Web (75h)</h3>
-            <p>
-              Ce cours permet à l'étudiant d'acquérir les compétences de base
-              requises pour programmer l'interactivité de
-              l'interface-utilisateur d'une application multimédia en…
-            </p>
-          </div>
-
-          <div class="carte">
-            <h3>582-2M4 Conception graphique et imagerie vectorielle (90h)</h3>
-            <p>
-              Dans ce cours, l’étudiant poursuit l’apprentissage des notions
-              liées à la conception, à la communication graphique et au
-              traitement des…
-            </p>
-          </div>
-
-          <div class="carte">
-            <h3>582-2M3 Effets spéciaux et animation (60h)</h3>
-            <p>
-              Ce cours permet d'approfondir la formation de l’étudiant en
-              matière de traitement d’images en mouvement et de traitement
-              sonore. L’étudiant…
-            </p>
-          </div>
-
-          <div class="carte">
-            <h3>582-1J1 Animation et interactivité en jeu (75h)</h3>
-            <p>
-              Ce cours est consacré aux concepts de base nécessaires à la
-              création d’un jeu numérique. Le cours porte, d’une part,…
-            </p>
-          </div>
-
-          <div class="carte">
-            <h3>582-1W1 Mise en page Web (75h)</h3>
-            <p>
-              Dans ce cours, l'étudiant apprend les techniques de mise en page
-              Web en utilisant les langages de balisage et de…
-            </p>
-          </div>
-
-          <div class="carte">
-            <h3>582-1M2 Conception graphique et imagerie matricielle (90h)</h3>
-            <p>
-              Ce cours initie l'étudiant aux rudiments de la conception et de la
-              communication graphique ainsi qu'au traitement des images fixes…
-            </p>
-          </div>
-
-          <div class="carte">
-            <h3>582-1M1 Création vidéo (75h)</h3>
-            <p>
-              3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au
-              traitement des images en mouvement, au traitement du son ainsi…
-            </p>
-          </div>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </div>
 
-        <br />
+        <br>
         <br />
         <h4>
           Their could can widen ten she any. As so we smart those money in. Am
