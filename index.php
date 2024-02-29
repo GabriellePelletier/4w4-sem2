@@ -39,6 +39,8 @@
               <span class="leblockspan">et développement Web</span>
           </h2>
           <h3>TIM - Collège de Maisonneuve</h3>
+          <h4>Le but du Labo 3 est de nous permettre d'expérimenter avec une base de donnée, d'ajouter du 
+          php (générer du html à l'aide du php) et générer du css directement avec sass.</h4>
         </div>
         <button class="lebouton">Évènements</button>
       </header>
@@ -99,8 +101,6 @@
         <h4>Lien github page: <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/labo3">
           https://github.com/GabriellePelletier/4w4-sem2/tree/labo3</a></h4>
         <br>
-        <h4>Le but du Labo 3 est de nous permettre d'expérimenter avec une base de donnée, d'ajouter du 
-          php (générer du html à l'aide du php) et générer du css directement avec sass.</h4>
       </section>
     </div>
     <div id="evenement" class="global">
