@@ -7,13 +7,12 @@
 - Minimum 3 commits
 - Adaptation du thème de l'exercice 1
 - Création de la branch labo 3
--
 
 - Le nom de l'auteur
 - L'objectif du labo 3
 - Les réalisations
 - Un lien vers la github page
-- Décomposé le titre de chaque cours
+- Décomposer le titre de chaque cours
 - Sigle du cours
 - Le titre du cours
 - La durée du cours

@@ -22,8 +22,7 @@
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
+          preserveAspectRatio="none">
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
             class="shape-fill"
@@ -32,11 +31,15 @@
       </div>
       <header class="entete__header">
         <h1>Thème du groupe #1 sem2 <b>(h1)</b></h1>
-        <h2>
-          4W4 - Conception d'interface
-          <span class="leblockspan">et développement Web</span>
-        </h2>
-        <h3>TIM - Collège de Maisonneuve</h3>
+        <div class="block-texte">
+          <h2><b>Auteure: Gabrielle Pelletier</b></h2>
+            <br>
+          <h2>
+            4W4 - Conception d'interface
+              <span class="leblockspan">et développement Web</span>
+          </h2>
+          <h3>TIM - Collège de Maisonneuve</h3>
+        </div>
         <button class="lebouton">Évènements</button>
       </header>
     </div>
@@ -44,9 +47,7 @@
       <section>
         <h2>Accueil <b>(h2)</b></h2>
           <div class="cours">
-
         <!-- <h3>
-          <img src="image/img_logo_random.jpeg" alt="logo" />
           Certainty listening no no behaviour existence assurance situation is.
           Because add why not esteems amiable him. Interested the unaffected mrs
           law friendship add principles. Indeed on people do merits to. Court
@@ -66,9 +67,18 @@
           // }
 
           if(have_posts()):
-            while(have_posts()): the_post(); ?>
+            while(have_posts()): the_post(); 
+            $titre = get_the_title();
+            $sigle = substr($titre, 0, 7);
+            $duree = substr($titre, -5);
+            
+            $titre = substr($titre, 8, -6);
+            //strpos()
+            ?>
             <div class="carte">
-              <h3><?php the_title(); ?></h3>
+              <h4><?php echo $sigle; ?></h4>
+              <h3><?php echo $titre; ?></h3>
+              <h4><?php echo $duree; ?></h4>
               <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
             </div>
 
@@ -85,6 +95,12 @@
           outweigh desirous sex overcame. Improved property reserved disposal do
           offering me. (h4)
         </h4>
+        <br>
+        <h4>Lien github page: <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/labo3">
+          https://github.com/GabriellePelletier/4w4-sem2/tree/labo3</a></h4>
+        <br>
+        <h4>Le but du Labo 3 est de nous permettre d'expérimenter avec une base de donnée, d'ajouter du 
+          php (générer du html à l'aide du php) et générer du css directement avec sass.</h4>
       </section>
     </div>
     <div id="evenement" class="global">
@@ -133,6 +149,8 @@
           Intention age nay otherwise but breakfast. Around garden beyond to
           extent by. (h6)
         </h6>
+        <br>
+        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/img_logo_random.jpeg" alt="logo" />
       </section>
     </div>
     <div id="galerie" class="global diagonal">

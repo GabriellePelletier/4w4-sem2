@@ -11,18 +11,18 @@ Text Domain: theme-gabrielle
 
 */
 
-@import "variables";
+@import "../sass/variables";
 
-@import "layout";
+@import "../sass/layout";
 
-@import "base/h";
+@import "../sass/base/h";
 
-@import "effet/vague";
+@import "../sass/effet/vague";
 
-@import "effet/diagonal";
+@import "../sass/effet/diagonal";
 
-@import "effet/entete";
+@import "../sass/effet/entete";
 
-@import "effet/bouton";
+@import "../sass/effet/bouton";
 
-@import "composant/cours";
+@import "../sass/composant/cours";

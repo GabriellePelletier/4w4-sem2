@@ -12,11 +12,11 @@ Text Domain: theme-gabrielle
 
 */
 :root {
-  --transparence-h: rgba(0, 0, 0, 0.523);
+  --transparence-h: rgba(86, 82, 68, 0.523);
   --transparence-h1-valeur: 0.7;
   --transparence-section: 0.3;
   --valeur-largeur-galerie: 70vw;
-  --u1: 15;
+  --u1: 30;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
@@ -67,7 +67,7 @@ body {
 }
 
 .codeblock:hover {
-  background-color: rgba(0, 0, 0, var(--transparence-h1-valeur));
+  background-color: rgba(97, 89, 74, var(--transparence-h1-valeur));
 }
 
 .global {
@@ -159,6 +159,13 @@ img {
 img:hover {
   filter: brightness(1.2);
   border-radius: 50px;
+}
+
+.block-texte {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  padding: 1%;
+  margin-bottom: 1%;
 }
 
 h1 {
@@ -306,6 +313,13 @@ button:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 1 20%;
-  border: 1px solid grey;
+  flex: 0 1 23%;
+  border: 2px solid var(--couleur-texte-h2);
+}
+
+@media screen and (max-width: 912px) {
+  .carte {
+    flex: 0 1 80%;
+    margin-left: 5%;
+  }
 }/*# sourceMappingURL=style.css.map */
