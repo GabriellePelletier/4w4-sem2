@@ -1,0 +1,35 @@
+button {
+  font-size: clamp(0.938rem, 0.75rem + 0.6vw, 1.125rem);
+  padding: 1.5%;
+  background-image: linear-gradient(120deg, white, rgb(181, 197, 207));
+  transition: transform 0.2s;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    120deg,
+    rgb(186, 186, 186),
+    rgb(149, 175, 187)
+  );
+  transform: translateY(-10px);
+}
+
+button:active {
+  background-image: linear-gradient(
+    120deg,
+    rgb(200, 233, 228),
+    rgb(76, 221, 231)
+  );
+}
+
+// Style du bouton
+.lebouton {
+  display: flex;
+  align-self: center;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lebouton:hover {
+  text-decoration: none;
+}

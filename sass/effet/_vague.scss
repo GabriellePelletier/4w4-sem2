@@ -31,13 +31,15 @@
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  z-index: 2;
 }
 
 .vague2 svg {
   position: relative;
   display: block;
-  width: calc(160% + 1.3px);
+  width: calc(182% + 1.3px);
   height: 150px;
+  transform: rotateY(180deg);
 }
 
 .vague2 .shape-fill {
