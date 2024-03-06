@@ -12,8 +12,14 @@
       rel="stylesheet"
     />
     <!-- Link à d'autres pages -->
-    <link rel="stylesheet" href="../4w4-sem2/normalize.css" />
-    <link rel="stylesheet" href="../4w4-sem2/style.css" />
+    <link
+      rel="stylesheet"
+      href="http://localhost/4w4gabrielle/wp-content/themes/4w4-sem2/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://localhost/4w4gabrielle/wp-content/themes/4w4-sem2/style.css"
+    />
   </head>
   <body>
     <div id="entete" class="global">
@@ -32,11 +38,20 @@
       </div>
       <header class="entete__header">
         <h1>Thème du groupe #1 sem2 <b>(h1)</b></h1>
-        <h2>
-          4W4 - Conception d'interface
-          <span class="leblockspan">et développement Web</span>
-        </h2>
-        <h3>TIM - Collège de Maisonneuve</h3>
+        <div class="block-texte">
+          <h2><b>Auteure: Gabrielle Pelletier</b></h2>
+          <br />
+          <h2>
+            4W4 - Conception d'interface
+            <span class="leblockspan">et développement Web</span>
+          </h2>
+          <h3>TIM - Collège de Maisonneuve</h3>
+          <h4>
+            Le but du Labo 3 est de nous permettre d'expérimenter avec une base
+            de donnée, d'ajouter du php (générer du html à l'aide du php) et
+            générer du css directement avec sass.
+          </h4>
+        </div>
         <button class="lebouton">Évènements</button>
       </header>
     </div>
@@ -45,7 +60,6 @@
         <h2>Accueil <b>(h2)</b></h2>
         <div class="cours">
           <!-- <h3>
-          <img src="image/img_logo_random.jpeg" alt="logo" />
           Certainty listening no no behaviour existence assurance situation is.
           Because add why not esteems amiable him. Interested the unaffected mrs
           law friendship add principles. Indeed on people do merits to. Court
@@ -55,7 +69,9 @@
           are tedious. (h3)
         </h3> -->
           <div class="carte">
-            <h3>582-6N3 Stage (285h)</h3>
+            <h4>582-6N3</h4>
+            <h3>Stage</h3>
+            <h4>285h)</h4>
             <p>
               Le stage en entreprise complète la formation de l’étudiant en lui
               permettant d'intégrer et de mettre en application ses différents
@@ -65,88 +81,107 @@
           </div>
 
           <div class="carte">
-            <h3>582-3M5 Imagerie 3D (75h)</h3>
+            <h4>582-5MB</h4>
+            <h3>Technologies émergentes et avancées – volet Création</h3>
+            <h4>(60h)</h4>
             <p>
-              Dans ce cours, l’étudiant est initié au monde de l’imagerie de
-              synthèse. Il est amené à maîtriser les outils et les
-              fonctionnalités de base d’un logiciel de production 3D pour…
+              En session 5, l'étudiant doit choisir entre ce cours et le cours
+              Technologies émergentes et avancées – volet Programmation. Dans ce
+              cours, l’étudiant davantage intéressé par les aspects créatifs du…
             </p>
           </div>
 
           <div class="carte">
-            <h3>582-2J2 Création de jeu 2D (60h)</h3>
+            <h4>582-5W5</h4>
+            <h3>Projet Web en équipe</h3>
+            <h4>105h)</h4>
             <p>
-              Dans ce cours, l’étudiant approfondit la programmation graphique
-              et s’initie aux concepts de base d'un moteur de jeu. Le cours
-              permet d'approfondir la maîtrise de la structure d'affichage ainsi
-              que…
+              Préalable relatif : Conception d’interfaces et développement Web
+              Dans ce cours, qui s'appuie sur une pédagogie par projets,
+              l’étudiant participe à la réalisation d’un produit multimédia en
+              ligne pour un…
             </p>
           </div>
 
           <div class="carte">
-            <h3>582-2W2 Animation et interactivité Web (75h)</h3>
+            <h4>350-5N1</h4>
+            <h3>Communication et dynamique d’une équipe de travail</h3>
+            <h4>(45h)</h4>
             <p>
-              Ce cours permet à l'étudiant d'acquérir les compétences de base
-              requises pour programmer l'interactivité de
-              l'interface-utilisateur d'une application multimédia en ligne. Les
-              notions abordées dans les cours « 582-1W1 Mise…
+              Ce cours permet à l’étudiant de développer ses habiletés en
+              matière de communication interpersonnelle et de mieux interagir
+              dans une équipe multimédia. L’étudiant est appelé à développer sa
+              capacité́ à…
             </p>
           </div>
 
           <div class="carte">
-            <h3>582-2M4 Conception graphique et imagerie vectorielle (90h)</h3>
+            <h4>393-5E1</h4>
+            <h3>Méthodes de recherche et préparation au marché du travail</h3>
+            <h4>(45h)</h4>
             <p>
-              Dans ce cours, l’étudiant poursuit l’apprentissage des notions
-              liées à la conception, à la communication graphique et au
-              traitement des images fixes vectorielles. L'étudiant développe un
-              concept créatif décliné en…
+              Ce cours permet à l’étudiant d'acquérir des habiletés en
+              recherche, en organisation et en transmission d’informations
+              numériques. L'étudiant est initié aux notions de base liées à la
+              veille informationnelle et…
             </p>
           </div>
 
           <div class="carte">
-            <h3>582-2M3 Effets spéciaux et animation (60h)</h3>
+            <h4>582-4MB</h4>
+            <h3>Animation 3D</h3>
+            <h4>(75h)</h4>
             <p>
-              Ce cours permet d'approfondir la formation de l’étudiant en
-              matière de traitement d’images en mouvement et de traitement
-              sonore. L’étudiant poursuit son apprentissage des techniques de
-              prise de vues avec…
+              En session 4, l'étudiant doit choisir entre ce cours et le cours
+              Interfaces Web réactives et animées. Ce cours a pour but de
+              permettre à l’étudiant d’approfondir les notions acquises…
             </p>
           </div>
 
           <div class="carte">
-            <h3>582-1J1 Animation et interactivité en jeu (75h)</h3>
+            <h4>582-4PA</h4>
+            <h3>Interfaces Web réactives et animées &#8211; Cours au choix</h3>
+            <h4>(75h)</h4>
             <p>
-              Ce cours est consacré aux concepts de base nécessaires à la
-              création d’un jeu numérique. Le cours porte, d’une part, sur
-              l’animation des médias : l’étudiant y apprend à importer…
+              En session 4, l'étudiant doit choisir entre ce cours et le cours
+              Animation 3D. Dans ce cours, l'étudiant ayant un intérêt plus
+              marqué pour la programmation a la possibilité d'approfondir…
             </p>
           </div>
 
           <div class="carte">
-            <h3>582-1W1 Mise en page Web (75h)</h3>
+            <h4>582-4J4</h4>
+            <h3>Création de jeu en équipe</h3>
+            <h4>105h)</h4>
             <p>
-              Dans ce cours, l'étudiant apprend les techniques de mise en page
-              Web en utilisant les langages de balisage et de feuilles de
-              styles. L'étudiant apprend également à analyser et schématiser…
+              Dans ce cours qui s'appuie sur une pédagogie par projets,
+              l’étudiant réalise un projet d’envergure en équipe de travail.
+              C’est l’occasion pour l’étudiant d’appliquer et d’intégrer
+              l’ensemble des compétences acquises…
             </p>
           </div>
 
           <div class="carte">
-            <h3>582-1M2 Conception graphique et imagerie matricielle (90h)</h3>
+            <h4>582-4W4</h4>
+            <h3>Conception d’interfaces et développement Web</h3>
+            <h4>(90h)</h4>
             <p>
-              Ce cours initie l'étudiant aux rudiments de la conception et de la
-              communication graphique ainsi qu'au traitement des images fixes
-              matricielles. On y aborde les notions de base sur le…
+              Dans ce cours, l’étudiant poursuit son apprentissage de
+              l’intégration de sites Web dynamiques à l’aide d’un gestionnaire
+              de contenu. L’étudiant apprend à développer par programmation des
+              thèmes personnalisés pour répondre…
             </p>
           </div>
 
           <div class="carte">
-            <h3>582-1M1 Création vidéo (75h)</h3>
+            <h4>582-4C2</h4>
+            <h3>Gestion de projets multimédias</h3>
+            <h4>(45h)</h4>
             <p>
-              3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au
-              traitement des images en mouvement, au traitement du son ainsi
-              qu'aux bases de la scénarisation linéaire. L’étudiant apprend à
-              utiliser…
+              Ce cours initie l'étudiant aux rudiments de la gestion d’un projet
+              multimédia. L’étudiant apprend à analyser les besoins liés à la
+              réalisation du projet en termes de ressources humaines,
+              matérielles…
             </p>
           </div>
         </div>
@@ -160,6 +195,14 @@
           outweigh desirous sex overcame. Improved property reserved disposal do
           offering me. (h4)
         </h4>
+        <br />
+        <h4>
+          Lien github page:
+          <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/labo3">
+            https://github.com/GabriellePelletier/4w4-sem2/tree/labo3</a
+          >
+        </h4>
+        <br />
       </section>
     </div>
     <div id="evenement" class="global">
@@ -208,6 +251,11 @@
           Intention age nay otherwise but breakfast. Around garden beyond to
           extent by. (h6)
         </h6>
+        <br />
+        <img
+          src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/img_logo_random.jpeg"
+          alt="logo"
+        />
       </section>
     </div>
     <div id="galerie" class="global diagonal">
