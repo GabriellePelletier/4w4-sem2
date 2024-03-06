@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
   </head>
   <body>
+    <div id="menu" class="global">
+      <header class="hero">
+        <?php wp_nav_menu(array('container' => 'nav')); ?>
+      </header>
+    </div>
     <div id="entete" class="global">
       <div class="vague">
         <svg

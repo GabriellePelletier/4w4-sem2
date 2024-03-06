@@ -11,11 +11,15 @@ Text Domain: theme-gabrielle
 
 */
 
+// Base
+
 @import "../sass/variables";
 
 @import "../sass/layout";
 
 @import "../sass/base/h";
+
+// Effets
 
 @import "../sass/effet/vague";
 
@@ -25,4 +29,8 @@ Text Domain: theme-gabrielle
 
 @import "../sass/effet/bouton";
 
+// Composants
+
 @import "../sass/composant/cours";
+
+@import "../sass/composant/menu";

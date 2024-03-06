@@ -31,9 +31,9 @@ body {
   min-height: 40vh;
 }
 
-.global > header {
+.global > .hero {
   flex: 1;
-  min-height: auto;
+  // min-height: auto;
 }
 
 .global > section,
@@ -49,6 +49,9 @@ body {
 #footer {
   min-height: 20vh;
 }
+
+// #menu {
+// }
 
 #entete {
   background-color: var(--couleur-arriere-entete);

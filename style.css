@@ -81,9 +81,8 @@ body {
   min-height: 40vh;
 }
 
-.global > header {
+.global > .hero {
   flex: 1;
-  min-height: auto;
 }
 
 .global > section,
@@ -272,7 +271,7 @@ h6 {
   z-index: -1;
 }
 
-.entete__header {
+.hero {
   background-image: url("../4w4-sem2/image/monument.jpeg");
   background-size: cover;
 }
@@ -324,4 +323,25 @@ button:active {
   padding: 1rem;
   border: 1px solid var(--couleur-texte-h2);
   background-color: var(--_couleur-arriere);
+}
+
+.menu-principal-container {
+  background-color: rgb(188, 178, 178);
+  padding: 1rem;
+  transition: 1s;
+}
+.menu-principal-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+.menu-principal-container .menu-item a {
+  color: rgb(0, 0, 0);
+  transition: 1s;
+}
+.menu-principal-container .menu-item a:hover {
+  color: var(--couleur-texte-h2);
+}
+
+.menu-principal-container:hover {
+  background-color: rgb(207, 219, 235);
 }/*# sourceMappingURL=style.css.map */
