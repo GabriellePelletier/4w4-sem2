@@ -48,6 +48,10 @@ Text Domain: theme-gabrielle
   --bouton-couleur4: hsl(var(--u2), 10%, 70%);
 }
 
+.carte {
+  --_couleur-arriere: hsl(var(--u1), 40%, 85%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -313,14 +317,11 @@ button:active {
 .carte {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 23%;
-  border: 2px solid var(--couleur-texte-h2);
-}
-
-@media screen and (max-width: 912px) {
-  .carte {
-    flex: 0 1 80%;
-    margin-left: 5%;
-  }
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1 0 225px;
+  padding: 1rem;
+  border: 1px solid var(--couleur-texte-h2);
+  background-color: var(--_couleur-arriere);
 }/*# sourceMappingURL=style.css.map */

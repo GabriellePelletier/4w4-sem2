@@ -72,16 +72,21 @@
             while(have_posts()): the_post(); 
             $titre = get_the_title();
             $sigle = substr($titre, 0, 7);
-            $duree = substr($titre, -5);
+            // $duree = substr($titre, -6);
+
+            // Code prof
+            $pos_parenthese = strpos($titre, '(');
+            $duree = substr($titre, $pos_parenthese + 1, - 1);
+            $titre = substr($titre, 7, $pos_parenthese - 7);
             
-            $titre = substr($titre, 8, -6);
+            // $titre = substr($titre, 8, -6);
             //strpos()
             ?>
             <div class="carte">
               <h4><?php echo $sigle; ?></h4>
               <h3><?php echo $titre; ?></h3>
-              <h4><?php echo $duree; ?></h4>
               <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
+              <h4>Durée : <?php echo $duree; ?></h4>
             </div>
 
             <?php endwhile; ?>
