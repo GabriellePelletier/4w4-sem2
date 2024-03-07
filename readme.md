@@ -1,36 +1,42 @@
 # Exercice #1
 
-# Gabrielle pelletier
+### _Auteur: Gabrielle pelletier_
 
-# Éléments de l'énoncé:
+## LIEN VERS LA GITHUB PAGE: https://gabriellepelletier.github.io/4w4-sem2/
 
-- Minimum 3 commits
-- Adaptation du thème de l'exercice 1
-- Création de la branch labo 3
+Voici maintenant les éléments de correction:
 
-- Le nom de l'auteur
-- L'objectif du labo 3
-- Les réalisations
-- Un lien vers la github page
-- Décomposer le titre de chaque cours
-- Sigle du cours
-- Le titre du cours
-- La durée du cours
-- Garder les 30 premiers mots de la description du cours
-- La sélection galerie affichera la liste des cours du TIM en 4 colonnes
-- La liste devra s'adapter aux différentes largeurs de fenêtre
-- Chacune des cartes de cours sera formatées en utilisant les flex box
+### Création d'un menu principal
 
-(Sigle du cours ex: 582-4w4)
-(Titre du cours ex: Conception d'interface et développement web)
-(La durée du cours ex: 4h)
+### Créer une nouvelle branche « labo4 »
 
-## La sélection galerie affichera la liste des cours du TIM en 4 colonnes.
+- Ajouter un menu permettant d'accéder
+  à vos cinq cours préférés
+  à chacune des sections de la page
 
-- Chacune des cartes de cours sera formatés en utilisant les flex box
+- Le menu doit être formatter en utilisant
+  composant/\_menu.scss
+  Le menu doit être adaptatif et être amovible en version mobile.
 
-## Barème de correction
+### Création d'un header.php
 
-- Organisation du code, 3 commits minimum (point)
-- Résultat sous forme de github page (0.5 point)
-- Design global de la page (0.5 point)
+- Créer le template header.php qui contiendra la structure d'entête
+  de la page qui sera reproduitedans chacun des modules du thème.
+
+### Création d'un 'template part' (gabarit)
+
+Créer un template-part qui permettra d'afficher les vagues.
+
+### Barème de correction
+
+- intégration de chacun des éléments précédents de façon structuré. (1 point)
+- Création d'une github-page à partir de index.htm
+- Création d'un readme.md avec le nom de l'auteur(e)
+- - Le nom de l'auteur
+- - Un résumé des étapes du labo-4
+- - Un lien vers notre github-page
+    production de 5 commits
+    Design général de la page (1 point)
+
+Intégration du code (1 point)
+Design et organisation du code (1 point)
