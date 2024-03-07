@@ -6,11 +6,27 @@
   padding: 1rem;
 
   transition: 1s;
+  @media (max-width: 700px) {
+    background-color: transparent;
+  }
 
   .menu {
-    //ul
+    position: absolute;
     display: flex;
-    justify-content: space-around;
+    list-style-type: none;
+    flex-direction: column;
+
+    transform: translateX(-100%);
+    transition: transform 2s;
+    //ul
+    @media (min-width: 700px) {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      transform: translateX(0);
+    }
+    // display: none;
   }
 
   // .menu-item {
@@ -31,4 +47,26 @@
 
 .menu-principal-container:hover {
   background-color: rgb(207, 219, 235);
+}
+
+// Gestion du label #burger (l'image svg est dans le label)
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  @media (min-width: 700px) {
+    display: none;
+  }
+}
+
+#chk_burger {
+  // display: none;
+}
+
+#chk_burger:checked ~ .menu {
+  transform: translateX(100%);
+}
+
+#chk_burger:checked ~ menu {
 }

@@ -33,6 +33,7 @@
 
   /* Couleur d'avant plan - background-color */
   --couleur-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-arriere-menu: hsl(var(--u1), 80%, 50%);
   --couleur-accueil: hsl(var(--u1), 100%, 25%);
   // --couleur-evenement: hsl(var(--u1), 100%, 20%);
   // --couleur-galerie: hsl(var(--u1), 100%, 25%);
@@ -53,4 +54,12 @@
 
 .carte {
   --_couleur-arriere: hsl(var(--u1), 40%, 85%);
+}
+
+#entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-entete);
+}
+
+#galerie {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
 }

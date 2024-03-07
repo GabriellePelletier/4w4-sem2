@@ -21,7 +21,7 @@ Voici maintenant les éléments de correction:
 ### Création d'un header.php
 
 - Créer le template header.php qui contiendra la structure d'entête
-  de la page qui sera reproduitedans chacun des modules du thème.
+  de la page qui sera reproduite dans chacun des modules du thème.
 
 ### Création d'un 'template part' (gabarit)
 

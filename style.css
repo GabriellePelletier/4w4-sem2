@@ -36,6 +36,7 @@ Text Domain: theme-gabrielle
   --couleur-arriere-pour-vague: hsl(var(--u1), 100%, 25%, 20%);
   /* Couleur d'avant plan - background-color */
   --couleur-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-arriere-menu: hsl(var(--u1), 80%, 50%);
   --couleur-accueil: hsl(var(--u1), 100%, 25%);
   --couleur-footer: hsl(var(--u1), 100%, 30%);
   --couleur-evenement: var(--couleur-arriere-accueil);
@@ -50,6 +51,14 @@ Text Domain: theme-gabrielle
 
 .carte {
   --_couleur-arriere: hsl(var(--u1), 40%, 85%);
+}
+
+#entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-entete);
+}
+
+#galerie {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
 }
 
 * {
@@ -95,6 +104,10 @@ body {
 #entete,
 #footer {
   min-height: 20vh;
+}
+
+#entete__menu {
+  background-color: var(--_couleur-arriere-menu);
 }
 
 #entete {
@@ -330,9 +343,27 @@ button:active {
   padding: 1rem;
   transition: 1s;
 }
+@media (max-width: 700px) {
+  .menu-principal-container {
+    background-color: transparent;
+  }
+}
 .menu-principal-container .menu {
+  position: absolute;
   display: flex;
-  justify-content: space-around;
+  list-style-type: none;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 2s;
+}
+@media (min-width: 700px) {
+  .menu-principal-container .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateX(0);
+  }
 }
 .menu-principal-container .menu-item a {
   color: rgb(0, 0, 0);
@@ -344,4 +375,20 @@ button:active {
 
 .menu-principal-container:hover {
   background-color: rgb(207, 219, 235);
+}
+
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+#chk_burger:checked ~ .menu {
+  transform: translateX(100%);
 }/*# sourceMappingURL=style.css.map */
