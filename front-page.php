@@ -46,11 +46,11 @@
           if(have_posts()):
             while(have_posts()): the_post(); 
             $titre = get_the_title();
- 
+
             ?>
             <div class="carte">
               <h3><?php echo $titre; ?></h3>
-              <p><?php the_content(); ?></p>
+              <p><?php echo wp_trim_words(get_the_content(), 30); ?></p>
             </div>
 
             <?php endwhile; ?>
