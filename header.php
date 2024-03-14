@@ -17,6 +17,7 @@
   </head>
   <body>
     <div id="entete__menu" class="global">
+      <?php get_custom_logo(); ?>
         <header class="hero">
       </header>
         <input type="checkbox" name="" id="chk_burger">
