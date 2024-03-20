@@ -5,7 +5,7 @@
       <?php get_template_part("gabarits/vague"); ?>
       <!-- Fin vague -->
       <header class="entete__header">
-        <h1>Thème du groupe #1 sem2 <b>(h1)</b></h1>
+        <h1>4W4 - Gabrielle <b>| Catégorie</b></h1>
         <div class="block-texte">
           <h2><b>Auteure: Gabrielle Pelletier</b></h2>
             <br>
@@ -50,7 +50,7 @@
             ?>
             <div class="carte">
               <h3><?php echo $titre; ?></h3>
-              <p><?php the_content(); ?></p>
+              <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
             </div>
 
             <?php endwhile; ?>

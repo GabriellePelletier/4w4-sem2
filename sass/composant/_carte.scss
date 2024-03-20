@@ -1,4 +1,4 @@
-.cours {
+.destinations {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -18,10 +18,18 @@
   background-color: var(--_couleur-arriere);
 }
 
-// Le media query n'est pas aussi efficace que s'il n'est pas utilisé.
-// @media screen and (max-width: 912px) {
-//   .carte {
-//     flex: 1 0 80%;
-//     margin-left: 5%;
-//   }
-// }
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 calc(900px / 4);
+  border: 1px solid #aaa;
+  background-color: var(--_couleur-arriere);
+  padding: 1rem;
+}
+
+.post-categories {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
