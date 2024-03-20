@@ -27,7 +27,7 @@
     <div id="accueil" class="global">
       <section>
         <h2>Accueil <b>(h2)</b></h2>
-          <div class="cours">
+          <div class="destinations">
         <!-- <h3>
           Certainty listening no no behaviour existence assurance situation is.
           Because add why not esteems amiable him. Interested the unaffected mrs

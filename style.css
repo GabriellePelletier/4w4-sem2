@@ -320,7 +320,7 @@ button:active {
   text-decoration: none;
 }
 
-.cours {
+.destinations {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -337,6 +337,12 @@ button:active {
   padding: 1rem;
   border: 1px solid var(--couleur-texte-h2);
   background-color: var(--_couleur-arriere);
+}
+
+.post-categories {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
 
 .menu-principal-container {
@@ -396,4 +402,13 @@ button:active {
 
 #chk_burger:checked ~ .menu-principal-container {
   transform: translateX(0%);
+}
+
+a.custom-logo-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */

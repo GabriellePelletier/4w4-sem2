@@ -5,7 +5,7 @@
     <div id="accueil" class="global">
       <section>
         <h2>Accueil <b>(h2)</b></h2>
-          <div class="cours">
+          <div class="destinations">
         <?php
 
           // if(have_posts()){
