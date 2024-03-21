@@ -17,7 +17,7 @@
   </head>
   <!-- Début du corps du site -->
   <body>
-    <div id="entete__menu" class="global">
+    <div id="entete__menu" class="global clr-primaire-100 bck-primaire-400">
       <?php echo get_custom_logo(); ?>
         <header class="hero">
       </header>

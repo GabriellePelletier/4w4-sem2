@@ -1,8 +1,8 @@
-# Exercice #1
+# Labo 5
 
 ### _Auteur: Gabrielle pelletier_
 
-## LIEN VERS LA GITHUB PAGE: https://gabriellepelletier.github.io/4w4-sem2/
+## LIEN VERS LA GITHUB PAGE: http://localhost/4w4gabrielle/
 
 Voici maintenant les éléments de correction:
 

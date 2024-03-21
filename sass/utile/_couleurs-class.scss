@@ -1,0 +1,16 @@
+@each $valeur, $clr in $agencement-couleur {
+  .clr-agencement-#{$valeur} {
+    @include couleur-agencement($clr...);
+  }
+}
+
+// Mixim pour agencer des couleurs
+
+@mixin couleur-agencement($clr, $bck) {
+  color: $clr;
+  @if (list.length($bck) ==1) {
+    background-color: $bck;
+  } @else {
+    background-image: linear-gradient(90deg, $bck);
+  }
+}

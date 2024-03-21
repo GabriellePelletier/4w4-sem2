@@ -234,10 +234,6 @@ body {
   min-height: 20vh;
 }
 
-#entete__menu {
-  background-color: var(--_couleur-arriere-menu);
-}
-
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--transparence-h);
@@ -476,6 +472,8 @@ button:active {
 .menu-principal-container {
   background-color: rgb(188, 178, 178);
   padding: 1rem;
+  display: flex;
+  justify-content: center;
   position: absolute;
   width: 100%;
   top: 10%;
@@ -492,6 +490,7 @@ button:active {
 .menu-principal-container .menu {
   list-style-type: none;
   line-height: 200%;
+  width: 70%;
 }
 @media (min-width: 700px) {
   .menu-principal-container .menu {

@@ -11,9 +11,13 @@ Text Domain: theme-gabrielle
 
 */
 
-// Base
+// Initiliasiation des variables SASS et CSS
 
-@import "../sass/variables";
+@import "../sass/utile/couleur";
+
+@import "../sass/utile/couleurs-class";
+
+// Base
 
 @import "../sass/layout";
 

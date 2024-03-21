@@ -65,6 +65,30 @@ $defaut: (
   }
 }
 
+// Agencement des couleurs
+
+$agencement-couleur: (
+  primaire: (
+    $--clr-bleu-fonce,
+    ($--clr-bleu-pale, $--clr-bleu-leger),
+  ),
+  secondaire: (
+    $--clr-orange-fonce,
+    $--clr-orange-pale,
+  ),
+  ternaire: (
+    $--clr-rouge-fonce,
+    $--clr-rouge-pale,
+  ),
+  vert: (
+    $--clr-vert-fonce,
+    $--clr-vert-pale,
+  ),
+);
+
+// ROOT
+// ////////////////////////////////////////////////////
+
 :root {
   // Couleur de transparence des titres
   --transparence-h: rgba(53, 50, 42, 0.673);
@@ -76,7 +100,7 @@ $defaut: (
   --valeur-largeur-galerie: 70vw;
 
   // Calcul des teintes
-  --u1: 30; // Couleur initiale
+  --u1: 215; // Couleur initiale
   --u2: calc(var(--u1) + 180); // Couleur complémentaire
   --u3: calc(var(--u2) - 30); // Couleur analogue gauche
   --u4: calc(var(--u2) + 30); // Couleur analogue droite
