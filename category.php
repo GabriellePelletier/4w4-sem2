@@ -28,15 +28,6 @@
       <section>
         <h2>Accueil <b>(h2)</b></h2>
           <div class="destinations">
-        <!-- <h3>
-          Certainty listening no no behaviour existence assurance situation is.
-          Because add why not esteems amiable him. Interested the unaffected mrs
-          law friendship add principles. Indeed on people do merits to. Court
-          heard which up above hoped grave do. Answer living law things either
-          sir bed length. Looked before we an on merely. These no
-          <b>death</b> he at share alone. Yet outward the him compass hearted
-          are tedious. (h3)
-        </h3> -->
         <?php
 
           if(have_posts()):

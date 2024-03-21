@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/normalize.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
   </head>
+  <!-- Début du corps du site -->
   <body>
     <div id="entete__menu" class="global">
       <?php echo get_custom_logo(); ?>
