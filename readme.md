@@ -2,41 +2,20 @@
 
 ### _Auteur: Gabrielle pelletier_
 
-## LIEN VERS LA GITHUB PAGE: http://localhost/4w4gabrielle/
+## LIEN VERS LA GITHUB PAGE: https://gabriellepelletier.github.io/4w4-sem2/
 
-Voici maintenant les éléments de correction:
+# Instructions
 
-### Création d'un menu principal
-
-### Créer une nouvelle branche « labo4 »
-
-- Ajouter un menu permettant d'accéder
-  à vos cinq cours préférés
-  à chacune des sections de la page
-
-- Le menu doit être formatter en utilisant
-  composant/\_menu.scss
-  Le menu doit être adaptatif et être amovible en version mobile.
-
-### Création d'un header.php
-
-- Créer le template header.php qui contiendra la structure d'entête
-  de la page qui sera reproduite dans chacun des modules du thème.
-
-### Création d'un 'template part' (gabarit)
-
-Créer un template-part qui permettra d'afficher les vagues.
-
-### Barème de correction
-
-- intégration de chacun des éléments précédents de façon structuré. (1 point)
-- Création d'une github-page à partir de index.htm
-- Création d'un readme.md avec le nom de l'auteur(e)
-- - Le nom de l'auteur
-- - Un résumé des étapes du labo-4
-- - Un lien vers notre github-page
-    production de 5 commits
-    Design général de la page (1 point)
-
-Intégration du code (1 point)
-Design et organisation du code (1 point)
+- Compléter l'utilisation du mapping avec boucle et mixin
+- Changer le titre et la description
+- Dans la page d'accueil on voit uniquement les destinations "populaires"
+- Chaque destination contient les catégories associées.
+  - Améliorer l'apparence de la liste des catégories associées
+  - Améliorer l'apparence de chacune des cartes
+- Afficher des cartes de catégories pour l'ensemble des catégories
+  - Titre de la catégorie
+  - 10 premiers mot de la description
+  - Un lien permet d'accéder à la liste des destinations de cette catégorie
+  - Le nombre d'article pour cette catégorie
+  - Créer github page : index.html (front-page.php)
+    - Ajouter l'addresse de la github-page dans votre read.me

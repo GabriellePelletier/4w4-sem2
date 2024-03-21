@@ -1,8 +1,4 @@
-@each $valeur, $clr in $agencement-couleur {
-  .clr-agencement-#{$valeur} {
-    @include couleur-agencement($clr...);
-  }
-}
+@use "sass:list";
 
 // Mixim pour agencer des couleurs
 
@@ -12,5 +8,11 @@
     background-color: $bck;
   } @else {
     background-image: linear-gradient(90deg, $bck);
+  }
+}
+
+@each $valeur, $clr in $agencement-couleur {
+  .clr-agencement-#{$valeur} {
+    @include couleur-agencement($clr...);
   }
 }

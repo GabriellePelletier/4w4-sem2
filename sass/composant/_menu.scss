@@ -2,7 +2,13 @@
 
 .menu-principal-container {
   //nav
-  background-color: rgb(188, 178, 178);
+  background: rgb(255, 177, 54);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 177, 54, 1) 0%,
+    rgba(255, 255, 255, 0.5396752450980392) 50%,
+    rgba(157, 193, 235, 1) 100%
+  );
 
   padding: 1rem;
 
@@ -61,7 +67,13 @@
 }
 
 .menu-principal-container:hover {
-  background-color: rgb(207, 219, 235);
+  background: rgb(255, 177, 54);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 187, 77) 0%,
+    rgba(255, 255, 255, 0.607) 50%,
+    rgb(169, 200, 235) 100%
+  );
 }
 
 // Gestion du label #burger (l'image svg est dans le label)
@@ -84,8 +96,8 @@
 }
 a.custom-logo-link {
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 8%;
+  left: 5%;
   width: 100px;
   height: 100px;
   z-index: 1;
