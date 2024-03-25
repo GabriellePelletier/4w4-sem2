@@ -1,15 +1,16 @@
 button {
   font-size: clamp(0.938rem, 0.75rem + 0.6vw, 1.125rem);
   padding: 1.5%;
-  background-image: linear-gradient(120deg, white, rgb(181, 197, 207));
+  background-image: linear-gradient(130deg, white, rgb(217, 198, 186));
   transition: transform 0.2s;
+  border-radius: 10px;
 }
 
 button:hover {
   background-image: linear-gradient(
     120deg,
     rgb(186, 186, 186),
-    rgb(149, 175, 187)
+    rgb(187, 158, 149)
   );
   transform: translateY(-10px);
 }
@@ -17,8 +18,8 @@ button:hover {
 button:active {
   background-image: linear-gradient(
     120deg,
-    rgb(200, 233, 228),
-    rgb(76, 221, 231)
+    rgb(233, 217, 200),
+    rgb(231, 159, 76)
   );
 }
 

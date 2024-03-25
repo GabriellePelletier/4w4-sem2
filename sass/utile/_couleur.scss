@@ -100,7 +100,7 @@ $agencement-couleur: (
   --valeur-largeur-galerie: 70vw;
 
   // Calcul des teintes
-  --u1: 215; // Couleur initiale
+  --u1: 220; // Couleur initiale
   --u2: calc(var(--u1) + 180); // Couleur complémentaire
   --u3: calc(var(--u2) - 30); // Couleur analogue gauche
   --u4: calc(var(--u2) + 30); // Couleur analogue droite
@@ -114,11 +114,11 @@ $agencement-couleur: (
   ---avant: 30%;
 
   /* Couleur d'arrière plan */
-  --couleur-arriere-entete: hsl(var(--u1), 70%, 90%);
-  --couleur-arriere-accueil: hsl(var(--u1), 70%, 85%);
-  --couleur-arriere-evenement: hsl(var(--u1), 70%, 80%);
-  --couleur-arriere-galerie: hsl(var(--u1), 70%, 85%);
-  --couleur-arriere-footer: hsl(var(--u1), 70%, 90%);
+  --couleur-arriere-entete: hsl(var(--u1), 40%, 80%);
+  --couleur-arriere-accueil: hsl(var(--u1), 30%, 30%);
+  --couleur-arriere-evenement: hsl(var(--u1), 20%, 50%);
+  --couleur-arriere-galerie: hsl(var(--u1), 30%, 65%);
+  --couleur-arriere-footer: hsl(var(--u1), 10%, 15%);
 
   --couleur-arriere-pour-vague: hsl(var(--u1), 100%, 25%, 20%);
 

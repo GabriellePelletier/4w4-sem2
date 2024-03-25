@@ -11,6 +11,7 @@ h1 {
 }
 
 h2 {
+  color: #ed8750;
   font-size: clamp(1rem, 0.25rem + 2.4vw, 1.75rem);
   font-weight: 500;
   font-style: normal;
@@ -18,6 +19,30 @@ h2 {
   // A enlever au cas où!
   // position: absolute;
   // z-index: 3;
+}
+
+#accueil h2 {
+  color: white;
+}
+
+#galerie h2 {
+  color: var(--couleur-arriere-accueil);
+}
+
+#accueil h3 {
+  color: white;
+}
+
+#accueil h4 {
+  color: white;
+}
+
+#accueil p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#accueil a {
+  color: #ba5c37;
 }
 
 h3 {
@@ -43,4 +68,12 @@ h6 {
   font-size: clamp(0.688rem, 0.625rem + 0.2vw, 0.75rem);
   color: var(--transparence-h-rand);
   line-height: 1.5;
+}
+
+#evenement h5 {
+  color: white;
+}
+
+#evenement h6 {
+  color: white;
 }

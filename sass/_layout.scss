@@ -122,16 +122,16 @@ b:hover {
 }
 
 img {
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
 
   transition: 1s;
 }
 
 img:hover {
   filter: brightness(1.2);
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .block-texte {

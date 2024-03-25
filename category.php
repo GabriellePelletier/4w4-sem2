@@ -49,7 +49,7 @@
           wrote up whole so tears sense oh. Absolute required of reserved in
           offering no. How sense found our those gay again taken the. Had mrs
           outweigh desirous sex overcame. Improved property reserved disposal do
-          offering me. (h4)
+          offering me.
         </h4>
         <br>
         <h4>Lien github page: <a href="https://github.com/GabriellePelletier/4w4-sem2/tree/labo3">
@@ -70,7 +70,7 @@
           <a href="https://www.randomtextgenerator.com/"
             >https://www.randomtextgenerator.com/</a
           >
-          (h5)
+          
         </h5>
         <br />
         <h6>
@@ -78,22 +78,24 @@
           Continuing devonshire but considered its. Rose past oh shew roof is
           song neat. Do depend better praise do friend garden an wonder to.
           Intention age nay otherwise but breakfast. Around garden beyond to
-          extent by. (h6)
+          extent by.
         </h6>
         <br>
-        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/img_logo_random.jpeg" alt="logo" />
+        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/leplanemodel.jpg" alt="logo" />
+        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/eclipseplane.jpg" alt="logo" />
+        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/tripleplane.jpg" alt="logo" />
       </section>
     </div>
     
     <div id="galerie" class="global diagonal">
       <section>
-        <h2>Galerie <b>(h2)</b></h2>
+        <h2>Galerie</h2>
         <h5 class="codeblock">
           Way nor furnished sir procuring therefore but. Warmth far manner
           myself active are cannot called. Set her half end girl rich met. Me
           allowance departure an <b>curiosity</b> ye. In no talking address
           excited it conduct. Husbands debating replying overcame blessing he it
-          me to domestic. (h5)
+          me to domestic.
         </h5>
         <br />
         <h6 class="codeblock">
@@ -113,7 +115,7 @@
           prevailed suspected am as. Add stairs admire all answer the nearer yet
           length. Advantages prosperous remarkably my inhabiting so reasonably
           be if. Too any appearance announcing <b>impossible</b> one. Out mrs
-          means heart ham tears shall power every. (h6)
+          means heart ham tears shall power every.
         </h6>
         <br />
         <button class="lebouton">
