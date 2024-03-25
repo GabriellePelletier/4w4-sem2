@@ -22,9 +22,10 @@
     </div>
     <div id="accueil" class="global">
       <section>
-        <h2>Accueil <b>(h2)</b></h2>
+        <h2>Accueil</h2>
         <h2><?php the_category(); ?></h2>
           <div class="destinations">
+       
         <?php
 
           if(have_posts()):
@@ -81,9 +82,6 @@
           extent by.
         </h6>
         <br>
-        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/leplanemodel.jpg" alt="logo" />
-        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/eclipseplane.jpg" alt="logo" />
-        <img src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/tripleplane.jpg" alt="logo" />
       </section>
     </div>
     
@@ -91,12 +89,21 @@
       <section>
         <h2>Galerie</h2>
         <h5 class="codeblock">
-          Way nor furnished sir procuring therefore but. Warmth far manner
-          myself active are cannot called. Set her half end girl rich met. Me
-          allowance departure an <b>curiosity</b> ye. In no talking address
-          excited it conduct. Husbands debating replying overcame blessing he it
-          me to domestic.
-        </h5>
+        The traveling agency is thrilled to announce that the destination they are 
+        selling out is a hidden gem waiting to be explored. With pristine beaches, 
+        vibrant culture, and delicious cuisine, this destination offers a unique and 
+        unforgettable experience for travelers. From thrilling outdoor adventures to 
+        relaxing beachside retreats, this destination has something for everyone. 
+        Don't miss the chance to discover the beauty and charm of this incredible place 
+        with the help of our expertly crafted travel packages.
+      </h5>
+      <div class="les-leonardo">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/tropic.jpg" alt="">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/waterfall.jpg" alt="">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/batiment.jpg" alt="">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/caprio.jpg" alt="">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/debene.jpg" alt="">
+      </div>
         <br />
         <h6 class="codeblock">
           Surprise steepest recurred landlord mr wandered amounted of.

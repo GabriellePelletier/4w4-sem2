@@ -25,6 +25,7 @@
         <h2><b>Accueil - Voyage en vue!</b></h2>
         <h2>Destinations populaires :</h2>
           <div class="destinations">
+        
         <!-- <h3>
           Certainty listening no no behaviour existence assurance situation is.
           Because add why not esteems amiable him. Interested the unaffected mrs
@@ -100,13 +101,21 @@
       <section>
         <h2>Galerie</h2>
         <h5 class="codeblock">
-          Way nor furnished sir procuring therefore but. Warmth far manner
-          myself active are cannot called. Set her half end girl rich met. Me
-          allowance departure an <b>curiosity</b> ye. In no talking address
-          excited it conduct. Husbands debating replying overcame blessing he it
-          me to domestic.
-        </h5>
-        <br />
+        The traveling agency is thrilled to announce that the destination they are 
+        selling out is a hidden gem waiting to be explored. With pristine beaches, 
+        vibrant culture, and delicious cuisine, this destination offers a unique and 
+        unforgettable experience for travelers. From thrilling outdoor adventures to 
+        relaxing beachside retreats, this destination has something for everyone. 
+        Don't miss the chance to discover the beauty and charm of this incredible place 
+        with the help of our expertly crafted travel packages.
+      </h5>
+      <div class="les-leonardo">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/tropic.jpg" alt="">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/waterfall.jpg" alt="">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/batiment.jpg" alt="">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/caprio.jpg" alt="">
+        <img class="codeblock" src="/4w4gabrielle/wp-content/themes/4w4-sem2/image/debene.jpg" alt="">
+      </div>
         <h6 class="codeblock">
           Surprise steepest recurred landlord mr wandered amounted of.
           Continuing devonshire but considered its. Rose past oh shew roof is

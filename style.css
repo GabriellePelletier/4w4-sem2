@@ -276,6 +276,12 @@ body {
   color: var(--transparence-h);
 }
 
+.les-leonardo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--transparence-h);
@@ -398,6 +404,10 @@ h6 {
 }
 
 #evenement h6 {
+  color: white;
+}
+
+#footer p {
   color: white;
 }
 
